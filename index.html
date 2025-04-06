@@ -5,45 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class="full-length-page">
         <div class="left-page">
+            <div class="hero-container">
+                
+                <img class="img-span" src="odin-img.png">
+                <h1 class="hero">ODIN</h1>
+                </div>
             
         </div>
         <div class="right-page">
             <section>
-            <h1 class="consistent-margin">This is some dummy text for an online form that doesn't exist.
+            <h1 class="consistent-margin consistent-padding">This is some dummy text for an online form that doesn't exist.
                 You need something like this in your project to help you realize your deepest dreams. Yeah buddy!
             </h1>
-            <h2 class="consistent-margin">This is some sub-heading text.</h2>
-            <div class="form-section">
-                <form>
+            <h2 class="consistent-margin consistent-padding">This is some <span class="italic">sub-heading</span> text.</h2>
+            <div class="form-section consistent-padding">
+                <form id="myform" method="get" action="something.php">
                     <p class="paragraph">Let's Do This!</p>
                     <div class="form-container">
                     <div> 
-                        <label for="name" class="form-field">Name</label>
-                        <input type="text" id="name" name="name">
+                        <label class="pointer" for="first-name" class="form-field">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
                     </div>
                     <div> 
-                        <label for="name" class="form-field">Name</label>
-                        <input type="text" id="name" name="name">
+                        <label class="pointer" for="last-name" class="form-field">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
                     </div>
                     <div> 
-                        <label for="name" class="form-field">Name</label>
-                        <input type="text" id="name" name="name">
+                        <label class="pointer" for="email" class="form-field">Email</label>
+                        <input type="email" id="email" name="email">
                     </div>
                     <div> 
-                        <label for="name" class="form-field">Name</label>
-                        <input type="text" id="name" name="name">
+                        <label class="pointer" for="phone" class="form-field">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div> 
+                        <label class="pointer" for="password" class="form-field">Password</label>
+                        <input type="password" id="password" name="password" required pattern="fe">
+                    </div>
+                    <div> 
+                        <label class="pointer" for="confirm-password" class="form-field">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required pattern="fe">
                     </div>
                     </div>
                     
                 </form>
         </div>
-        <button type="button">Submit</button>
-                    <p class="consistent-margin">Already have account?</p>
-                    <span class="consistent-margin">Login</span><link href="">
+        <button class="consistent-margin button" type="submit" form="myform" value="Update">Submit</button>
+                    <p class="consistent-margin consistent-padding">Already have account?
+                        <a href="#sfljsf" class="link-style">
+                            <span class="consistent-margin link-style">Login</span>
+                        </a>
+                    </p>
+                    
     </div>
 </section>
 </body>
